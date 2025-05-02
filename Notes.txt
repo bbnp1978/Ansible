@@ -1504,14 +1504,17 @@ ansible-vault rekey abc.yaml
 ==============================================
 Ansible Inventory is the list of hosts (servers) that Ansible manages. By default, Ansible uses a static inventory file (e.g., inventory.ini), where hosts and groups are manually defined.
 
-However, in cloud environments like AWS, servers are dynamic—they are created and terminated frequently. Manually updating inventory files becomes inefficient and error-prone.
+However, in cloud environments like AWS, servers are dynamic—they are created and terminated frequently. Manually 
+updating inventory files becomes inefficient and error-prone.
 
 🔹 What is Ansible Dynamic Inventory?
 =====================================
 
-Ansible Dynamic Inventory automatically retrieves real-time information about cloud instances, virtual machines, or containers from external sources like AWS, Azure, GCP, or Kubernetes.
+Ansible Dynamic Inventory automatically retrieves real-time information about cloud instances, virtual machines, or
+containers from external sources like AWS, Azure, GCP, or Kubernetes.
 
-Instead of maintaining a static hosts file, Ansible queries the cloud provider’s API and dynamically builds the inventory.
+Instead of maintaining a static hosts file, Ansible queries the cloud provider’s API and dynamically builds the 
+inventory.
 
 💡 Why Use Dynamic Inventory?
 ✅ No Manual Updates – Automatically detects new servers and removes old ones.
